@@ -88,6 +88,11 @@ btnHold.addEventListener('click', function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.remove('player--active');
+
+      diceEl.classList.add('hidden');
+
+      document.querySelector(`.player--${activePlayer} .name`).textContent =
+        'Winner 🎉';
     } else {
       // Switch the player
       switchPlayer();

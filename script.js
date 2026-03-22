@@ -28,6 +28,9 @@ const init = function () {
   player0El.classList.remove('player--winner');
   player1El.classList.remove('player--winner');
 
+  document.querySelector(`.player--0 .name`).textContent = 'PLAYER 1';
+  document.querySelector(`.player--1 .name`).textContent = 'PLAYER 2';
+
   scores = [0, 0];
   currentScore = 0;
   activePlayer = 0;
